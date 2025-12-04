@@ -23,12 +23,7 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
 
 section {
     padding: 80px 0;
@@ -72,6 +67,8 @@ nav {
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .navbar {
@@ -129,17 +126,18 @@ nav {
 
 .hero-content {
     display: flex;
-    justify-content: center;
+    margin: 2.5rem;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
-    z-index: 1;
+    z-index: 1;   
 }
 
 .hero-text {
     flex: 1;
     min-width: 300px;
     padding: 20px;
+    width: 45%;
 }
 
 .hero-text h2 {
@@ -166,26 +164,24 @@ nav {
 
 .responsive-video {
     position: relative;
-    width: 100%;
+    width: 50%;
+    height: 30%;
     padding-bottom: 45%;
     /* 16:9 ratio */
-    height: 0;
     overflow: hidden;
     border-radius: 2rem;
+    
 }
 
-.hero-vid {
-    width: 70%;
-    max-width: 800px;
-    margin: 0 auto;
-}
 
 .responsive-video iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 60%;
+    margin-top: 30px;
+    border-radius: 2rem;
     border: 0;
 }
 
@@ -488,22 +484,22 @@ footer {
     .hero-content {
         flex-direction: column;
     }
+    .responsive-video iframe {
 
+    width: 100%;
+    height: 60%;
+    border-radius: 2rem;
+}
     .hero-text,
     .hero-image {
         width: 100%;
     }
 
     .hero-text h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
-    .hero-vid {
-        width: 100%;
-        min-width: 400px;
-        max-width: 800px;
-        margin: 0 auto;
-    }
+   
 
     .section-title h2 {
         font-size: 2rem;
